@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128882787-3"></script>
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+
+		gtag('js', new Date());
+		gtag('config', 'UA-128882787-3');
+	</script>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="theme-color" content="#5C5553">
+
+	<title>SungBin | Home</title>
+	<meta name="description" content="sungbin's page">
+	<link rel="canonical" href="https://sungbin.me/">
+	<meta property="al:web:url" content="https://sungbin.me/">
+
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="SungBin | Home">
+	<meta property="og:description" content="sungbin's page">
+	<meta property="og:image" content="/image/sungbin.png">
+	<meta property="og:url" content="https://sungbin.me/">
+
+	<link rel="stylesheet" href="/css/icon.css">
+	<link rel="stylesheet" href="/css/main.css">
+</head>
+<body oncontextmenu="return false;">
+<div style="position: fixed; top: 0; bottom: 0; left: 15px; z-index: 999999; display: flex; align-items: center; flex-direction: column; justify-content: center;" id="list">
+	<div onclick="pageMove(1);" class="circle circle-active"></div>
+	<div onclick="pageMove(2);" class="circle"></div>
+	<div onclick="pageMove(3);" class="circle"></div>
+	<div onclick="pageMove(4);" class="circle"></div>
+	<div onclick="pageMove(5);" class="circle"></div>
+</div>
+<div id="body">
+	<section style="background: #403B39 center / cover;">
+		<div style="/*backdrop-filter: blur(15px);*/ display: flex; justify-items: center; height: 100vh; align-items: center;">
+			<div style="margin: 0 auto; text-align: center;">
+				<p style="font-size: 50px; font-weight: 100; margin-bottom: 72px; font-family: 'Noto Sans KR Thin', sans-serif;">Ji SungBin</p>
+				<p style="font-size: 27px;">Android Developer</p>
+			</div>
+		</div>
+	</section>
+	<section style="background: #4A4443 center / cover; margin-top: 100vh;">
+		<div style="height: 100vh; display: flex; align-items: center; align-self: center; justify-content: center; flex-direction: column;">
+			<article style="margin: 0 auto;">
+				<p style="font-size: 36px; text-align: center; font-weight: 700;">Profile</p>
+				<p style="font-size: 20px; text-align: right; font-weight: 200; margin-top: 5px; color: rgba(255, 255, 255, .6);">프로필</p>
+			</article>
+			<article style="margin: 72px auto 0; font-size: 22px; color: rgba(255, 255, 255, .6);" class="profile-link">
+				<a href="https://github.com/sungbin5304/" target="_blank" rel="noopener"><span class="mdi mdi-github"></span> @sungbin5304</a>
+				<a href="https://play.google.com/store/apps/dev?id=5527691348431041833" target="_blank" rel="noopener"><span class="mdi mdi-google-play"></span> @SungBin</a>
+				<a href="https://t.me/sungbin_dev" target="_blank" rel="noopener"><span class="mdi mdi-telegram"></span> @sungbin_dev</a>
+				<a href="mailto:sungbin.dev@gmail.com" rel="noopener"><span class="mdi mdi-email"></span> sungbin.dev@gmail.com</a>
+			</article>
+		</div>
+	</section>
+	<section style="background: #343434 center / cover; height: 100vh; display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 100vh;">
+		<article style="margin: 0 auto;">
+			<p style="font-size: 36px; text-align: center; font-weight: 700;">Libraries</p>
+			<p style="font-size: 22px; text-align: right; font-weight: 200; margin-top: 5px; color: rgba(255, 255, 255, .6);">라이브러리</p>
+		</article>
+		<article style="margin: 52px auto 0; color: rgba(255, 255, 255, .6);" class="activity-list">
+			<a href="https://github.com/sungbin5304/PermissionRequester" target="_blank" rel="noopener"><span class="mdi mdi-developer-board"></span> PermissionRequester</a>
+			<a href="https://github.com/sungbin5304/AndroidUtils" target="_blank" rel="noopener"><span class="mdi mdi-android-debug-bridge"></span> AndroidUtils</a>
+			<a href="https://github.com/sungbin5304/TagableRoundImageView" target="_blank" rel="noopener"><span class="mdi mdi-rounded-corner"></span> TagableRoundImageView</a>
+			<a href="https://github.com/sungbin5304/KUtils" target="_blank" rel="noopener"><span class="mdi mdi-rocket"></span> KUtils</a>
+		</article>
+	</section>
+	<section style="background: #4A4346 center / cover; height: 100vh; display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 100vh;">
+		<article style="margin: 0 auto;">
+			<p style="font-size: 36px; text-align: center; font-weight: 700;">Language</p>
+			<p style="font-size: 22px; text-align: right; font-weight: 200; margin-top: 5px; color: rgba(255, 255, 255, .6);">언어</p>
+		</article>
+		<article style="margin: 52px auto 0; color: rgba(255, 255, 255, .6);" class="activity-list">
+			<a><span class="iconify icon:cib:kotlin icon-inline:false"></span> 안드로이드 개발</a>
+			<a><span class="iconify icon:carbon:xml icon-inline:false"></span> 안드로이드 레이아웃</a>
+			<a><span class="mdi mdi-language-javascript"></span> 카카오톡 봇</a>
+		</article>
+	</section>
+	<section style="background: #403940 center / cover; height: 100vh; display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 100vh;">
+		<article style="margin: 0 auto;">
+			<p style="font-size: 36px; text-align: center; font-weight: 700;">Information</p>
+			<p style="font-size: 13px; text-align: center; font-weight: 200; margin-top: 5px; color: rgba(255, 255, 255, .6);">&copy; 2020 SungBin</p>
+		</article>
+		<article style="margin: 52px auto 0; color: rgba(255, 255, 255, .6); font-size: 18px;" class="activity-list info-list">
+			<a href="https://blog.naver.com/sungbin_dev/" target="_blank" rel="noopener">Blog</a><br>
+			<a href="https://github.com/sungbin5304/sungbin.me/" target="_blank" rel="noopener">Powered By Github</a><br><br>
+			<lottie-player src="/asset/smooth-swinging.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+		</article>
+	</section>
+</div>
+
+<script>
+	let lastUpdate = -1, page_num = 1;
+	const wheelEventListener = (e, skip = false) => {
+		if (Date.now() - lastUpdate < 100 && !skip) {
+			return;
+		}
+		if (e.ctrlKey || e.shiftKey) return;
+		if (!skip) lastUpdate = Date.now();
+
+		let cnt = document.querySelectorAll("#body > section").length, origin = page_num, next = page_num;
+		if (e.deltaY > 0) {
+			if (page_num < cnt) {
+				next = ++page_num;
+
+				document.querySelector(`#body > section:nth-child(${origin})`).style.transition = ".5s";
+				document.querySelector(`#body > section:nth-child(${next})`).style.transition = "none";
+
+				document.querySelector(`#body > section:nth-child(${origin})`).style.marginTop = "-100vh";
+				document.querySelector(`#body > section:nth-child(${next})`).style.marginTop = "0";
+
+				document.querySelector(`#list > div:nth-child(${next})`).classList.add("circle-active");
+				document.querySelector(`#list > div:nth-child(${origin})`).classList.remove("circle-active");
+			}
+		} else {
+			if (page_num > 1) {
+				next = --page_num;
+
+				document.querySelector(`#body > section:nth-child(${origin})`).style.transition = ".5s";
+				document.querySelector(`#body > section:nth-child(${next})`).style.transition = ".5s";
+
+				document.querySelector(`#body > section:nth-child(${next})`).style.marginTop = "0";
+
+				document.querySelector(`#list > div:nth-child(${next})`).classList.add("circle-active");
+				document.querySelector(`#list > div:nth-child(${origin})`).classList.remove("circle-active");
+			}
+		}
+
+		if (origin !== next) {
+			setTimeout(() => document.querySelector("meta[name=theme-color]").setAttribute('content', document.querySelector(`#body > section:nth-child(${next})`).style.backgroundColor), 400);
+		}
+	};
+
+	const pageMove = num => {
+		let dom = document.querySelector(`#list > div:nth-child(${num})`);
+		if (!dom.classList.contains("circle-active")) {
+			let delay = 0, current = Math.max(num, page_num);
+			for (let i = Math.min(num, page_num); i < current; i++) {
+				setTimeout(() => wheelEventListener({ctrlKey: false, shiftKey: false, deltaY: (num > page_num ? 1 : -1)}, true), 50 * delay++);
+			}
+		}
+	};
+
+	window.addEventListener('wheel', wheelEventListener);
+
+	let start = 0;
+	window.addEventListener('touchstart', e => {
+		start = e.touches[0].pageY;
+	});
+	window.addEventListener('touchmove', e => {
+		let current = e.touches[0].pageY;
+		if (Math.abs(current - start) > 120) {
+			if (start > current) { 
+				wheelEventListener({ctrlKey: false, shiftKey: false, deltaY: 1}, true);
+			} else {
+				wheelEventListener({ctrlKey: false, shiftKey: false, deltaY: -1}, true);
+			}
+
+			start = current;
+		}
+	});
+
+	document.addEventListener('keydown', e => {
+		if (e.type !== "keydown") return;
+		switch (e.key) {
+			case 'ArrowUp':
+			case 'PageUp':
+				wheelEventListener({ctrlKey: false, shiftKey: false, deltaY: -1}, true);
+				break;
+			case 'ArrowDown':
+			case 'PageDown':
+				wheelEventListener({ctrlKey: false, shiftKey: false, deltaY: 1}, true);
+				break;
+		}
+	})
+
+	document.addEventListener('DOMContentLoaded', e => {
+		let i = 1000;
+		for (let element of document.querySelector("#body").children) {
+			element.style.zIndex = i--;
+		}
+	});
+
+	window.addEventListener('resize', e => {
+	});
+</script>
+</body>
+</html>

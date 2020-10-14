@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,200,300&display=swap');
+
+* {
+	user-select: none;
+	overscroll-behavior: none;
+}
+ 
+html, body {
+	margin: 0;
+	font-weight: 300;
+	font-family: 'Noto Sans KR Light', sans-serif;
+
+	color: white;
+	background: #fff;
+}
+
+p {
+	margin: 0;
+}
+
+a[href] {
+	text-decoration: none;
+	color: inherit;
+}
+
+#list > .circle {
+	cursor: pointer;
+}
+
+.circle {
+	height: 8px;
+	width: 8px;
+	border-radius: 50%;
+	display: inline-block;
+	background-color: rgba(255, 255, 255, .3);
+
+	margin-top: 16px;
+
+	transition: .5s;
+}
+
+.circle-active {
+	border-radius: 0;
+	width: 2px;
+	height: 36px;
+
+	background: white;
+
+	cursor: inherit !important;
+}
+
+#body > * {
+	position: fixed;
+	width: 100vw;
+	top: 0;
+
+	overflow: hidden;
+}
+
+#triangle {
+	transition: 1s;
+}
+
+.hide > #triangle {
+	bottom: 100vh !important;
+}
+
+.hide {
+	margin-top: -100vh !important;
+	transition: 1s;
+}
+
+.profile-link > a {
+	margin-bottom: 10px;
+	display: block;
+}
+
+.profile-link > a:hover {
+	color: rgba(255, 255, 255, .87);
+}
+
+.activity-list a > span {
+	margin-right: 5px;
+}
+
+.activity-list {
+	font-size: 22px;
+	text-align: left;
+}
+
+.activity-list a:hover {
+	color: rgba(255, 255, 255, .87);
+}
+
+.activity-list a {
+	margin-bottom: 10px;
+	display: block;
+}
+
+.activity-list a > span {
+	margin-right: 5px;
+}
+
+.info-list {
+	text-align: center;
+}
+
+.info-list > a {
+	display: inline-block;
+	border-bottom: 1px dotted rgba(255, 255, 255, .6);
+}
+
+.info-list > a:hover {
+	border-bottom: 1px dotted rgba(255, 255, 255, .87);
+}
