@@ -1,13 +1,14 @@
 @font-face {
 	font-family: "Material Design Icons";
-	src: url("https://cdn.materialdesignicons.com/5.0.45/fonts/materialdesignicons-webfont.eot?v=5.0.45");
-	src: url("https://cdn.materialdesignicons.com/5.0.45/fonts/materialdesignicons-webfont.eot?#iefix&v=5.0.45") format("embedded-opentype"), url("https://cdn.materialdesignicons.com/5.0.45/fonts/materialdesignicons-webfont.woff2?v=5.0.45") format("woff2"), url("https://cdn.materialdesignicons.com/5.0.45/fonts/materialdesignicons-webfont.woff?v=5.0.45") format("woff"), url("https://cdn.materialdesignicons.com/5.0.45/fonts/materialdesignicons-webfont.ttf?v=5.0.45") format("truetype");
+	src: url("https://cdn.materialdesignicons.com/5.3.45/fonts/materialdesignicons-webfont.eot?v=5.3.45");
+	src: url("https://cdn.materialdesignicons.com/5.3.45/fonts/materialdesignicons-webfont.eot?#iefix&v=5.3.45") format("embedded-opentype"), url("https://cdn.materialdesignicons.com/5.3.45/fonts/materialdesignicons-webfont.woff2?v=5.3.45") format("woff2"), url("https://cdn.materialdesignicons.com/5.3.45/fonts/materialdesignicons-webfont.woff?v=5.3.45") format("woff"), url("https://cdn.materialdesignicons.com/5.3.45/fonts/materialdesignicons-webfont.ttf?v=5.3.45") format("truetype");
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
-} 
+}
 
-.mdi:before, .mdi-set {
+.mdi:before,
+.mdi-set {
 	display: inline-block;
 	font: normal normal normal 24px/1 "Material Design Icons";
 	font-size: inherit;
@@ -20202,19 +20203,23 @@
 	visibility: hidden
 }
 
-.mdi-18px.mdi-set, .mdi-18px.mdi:before {
+.mdi-18px.mdi-set,
+.mdi-18px.mdi:before {
 	font-size: 18px
 }
 
-.mdi-24px.mdi-set, .mdi-24px.mdi:before {
+.mdi-24px.mdi-set,
+.mdi-24px.mdi:before {
 	font-size: 24px
 }
 
-.mdi-36px.mdi-set, .mdi-36px.mdi:before {
+.mdi-36px.mdi-set,
+.mdi-36px.mdi:before {
 	font-size: 36px
 }
 
-.mdi-48px.mdi-set, .mdi-48px.mdi:before {
+.mdi-48px.mdi-set,
+.mdi-48px.mdi:before {
 	font-size: 48px
 }
 
@@ -20300,6 +20305,7 @@
 		-webkit-transform: rotate(0deg);
 		transform: rotate(0deg)
 	}
+
 	100% {
 		-webkit-transform: rotate(359deg);
 		transform: rotate(359deg)
@@ -20311,6 +20317,7 @@
 		-webkit-transform: rotate(0deg);
 		transform: rotate(0deg)
 	}
+
 	100% {
 		-webkit-transform: rotate(359deg);
 		transform: rotate(359deg)
