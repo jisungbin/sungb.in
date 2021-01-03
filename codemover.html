@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+<script>
+  var config = {
+    apiKey: "AIzaSyCdx6wd7nEasH6DI4bJWQR-cCCqOwbppdU",
+    authDomain: "codemover-aad07.firebaseapp.com",
+    databaseURL: "https://codemover-aad07-default-rtdb.firebaseio.com",
+    storageBucket: "codemover-aad07.appspot.com"
+  };
+  firebase.initializeApp(config);
+  var database = firebase.database();
+</script>
+
+<h1>CodeMover</h1>
+
+<form action="/action_page.php">
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
