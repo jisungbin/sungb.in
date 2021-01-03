@@ -19,6 +19,9 @@
   <input type="button" value="Submit" onclick="send()">
   <script>
     function send(){
+      firebase.database().ref('code').set({
+    a:'a'
+  });
       alert("ㅁㅁㅁㅁ"); 
     }
   </script>
