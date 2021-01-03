@@ -1,30 +1,61 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodeMover</title>
+
+    <style type="text/css">
+        #main {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        hr {
+            display: block;
+            height: 1px;
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 1em 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
 <body>
-
-<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
-<script>
-  var config = {
-    apiKey: "AIzaSyCdx6wd7nEasH6DI4bJWQR-cCCqOwbppdU",
-    authDomain: "codemover-aad07.firebaseapp.com",
-    databaseURL: "https://codemover-aad07-default-rtdb.firebaseio.com",
-    storageBucket: "codemover-aad07.appspot.com"
-  };
-  firebase.initializeApp(config);
-</script>
-
-<h1>CodeMover</h1>
-
-  <textarea name="code" style="width:350px;height:150px;"></textarea><br><br>
-  <input type="button" value="Submit" onclick="send()">
-  <script>
-    function send(){
-      firebase.database().ref('code').set({
-    a:'a'
-  });
-      alert("ㅁㅁㅁㅁ"); 
-    }
-  </script>
-
+    <div id="main">
+        <h2>CodeMover</h2> 
+        <button type="button"onclick="send()">send!</button> <br/><br/>
+        <textarea type="text" id="code" placeholder="코드를 입력하세요..." style="width:350px;height:150px;"></textarea>
+    </div>
 </body>
+
 </html>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+<script>
+    const config = {
+        apiKey: "AIzaSyCdx6wd7nEasH6DI4bJWQR-cCCqOwbppdU",
+        authDomain: "codemover-aad07.firebaseapp.com",
+        databaseURL: "https://codemover-aad07-default-rtdb.firebaseio.com",
+        storageBucket: "codemover-aad07.appspot.com"
+    };
+    firebase.initializeApp(config);
+
+    // 싱클톤?
+    const codeField = document.getElementById("code");
+    const database = firebase.database();
+
+    const send = () => {
+        const value = codeField.value;
+        if (value == "") {
+            alert("코드를 입력하세요!!");
+        } else {
+            database.ref().set({
+                code: value
+            });
+            alert("작업 완료!");
+        }
+    }
+</script>
