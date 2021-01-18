@@ -4,12 +4,11 @@
 	user-select: none;
 	overscroll-behavior: none;
 }
- 
+
 html, body {
 	margin: 0;
 	font-weight: 300;
 	font-family: 'Noto Sans KR Light', sans-serif;
-
 	color: white;
 	background: #fff;
 }
