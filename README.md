@@ -1,4 +1,4 @@
 # [https://sungbin.me](https://sungbin.me)
-> portfolio site
+> personal site
 
 ## Designd by [nlog.dev](https://github.com/nnnlog/nlog.dev)
