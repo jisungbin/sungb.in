@@ -23,12 +23,13 @@
 </head>
 
 <body>
-    <div id="main">
-        <h2>CodeMover</h2> 
-        <textarea type="text" id="code" placeholder="코드를 입력하세요..." style="width:350px;height:150px;"></textarea>
-        <hr>
-        <button type="button"onclick="send()">코드 이동!</button>
-    </div>
+<div id="main">
+    <h2>CodeMover</h2>
+    <label for="code"></label><textarea id="code" placeholder="코드를 입력하세요..."
+                                        style="width:350px;height:150px;"></textarea>
+    <hr>
+    <button onclick="send()" type="button">코드 이동!</button>
+</div>
 </body>
 
 </html>
@@ -36,27 +37,26 @@
 
 <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
 <script>
-    const config = {
-        apiKey: "AIzaSyCdx6wd7nEasH6DI4bJWQR-cCCqOwbppdU",
-        authDomain: "codemover-aad07.firebaseapp.com",
-        databaseURL: "https://codemover-aad07-default-rtdb.firebaseio.com",
-        storageBucket: "codemover-aad07.appspot.com"
-    };
-    firebase.initializeApp(config);
+  const config = {
+    apiKey: 'AIzaSyCdx6wd7nEasH6DI4bJWQR-cCCqOwbppdU',
+    authDomain: 'codemover-aad07.firebaseapp.com',
+    databaseURL: 'https://codemover-aad07-default-rtdb.firebaseio.com',
+    storageBucket: 'codemover-aad07.appspot.com',
+  };
+  firebase.initializeApp(config);
 
-    // 싱클톤?
-    const codeField = document.getElementById("code");
-    const database = firebase.database();
+  const codeField = document.getElementById('code');
+  const database = firebase.database();
 
-    const send = () => {
-        const value = codeField.value;
-        if (value == "") {
-            alert("코드를 입력하세요!!");
-        } else {
-            database.ref().set({
-                code: value
-            });
-            alert("작업 완료!");
-        }
+  const send = () => {
+    const value = codeField.value;
+    if (value === '') {
+      alert('코드를 입력하세요!!');
+    } else {
+      database.ref().set({
+        code: value,
+      });
+      alert('작업 완료!');
     }
+  };
 </script>
