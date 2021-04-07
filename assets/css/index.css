@@ -1,114 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-
-* {
-	user-select: none;
-	overscroll-behavior: none;
-}
-
-html, body {
-	margin: 0;
-	font-weight: 300;
-	font-family: 'Varela Round', sans-serif;
-	color: white;
-	background: #fff;
-}
-
-p {
-	margin: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 a[href] {
-	text-decoration: none;
-	color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
-#list > .circle {
-	cursor: pointer;
+.button-shadow {
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #039BE5;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 40px;
+    font-weight: 700;
+    -webkit-box-shadow: 0 4px 15px -5px #039BE5;
+    box-shadow: 0 4px 15px -5px #039BE5;
+    overflow: visible;
 }
 
-.circle {
-	height: 8px;
-	width: 8px;
-	border-radius: 50%;
-	display: inline-block;
-	background-color: rgba(255, 255, 255, .3);
-
-	margin-top: 16px;
-
-	transition: .5s;
+.button-text {
+    color: white;
+    margin: 0;
 }
 
-.circle-active {
-	border-radius: 0;
-	width: 2px;
-	height: 36px;
-
-	background: white;
-
-	cursor: inherit !important;
+.sungbin-with-mac {
+    width: 20%;
+    vertical-align: middle;
 }
 
-#body > * {
-	position: fixed;
-	width: 100vw;
-	top: 0;
-
-	overflow: hidden;
+.name {
+    font-weight: bold;
+    font-size: calc(3rem + 1vw);
 }
 
-#triangle {
-	transition: 1s;
+.cover-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
-.hide > #triangle {
-	bottom: 100vh !important;
+.center-content {
+    vertical-align: middle;
 }
 
-.hide {
-	margin-top: -100vh !important;
-	transition: 1s;
+.cover {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
 }
 
-.profile-link > a {
-	margin-bottom: 10px;
-	display: block;
-}
-
-.profile-link > a:hover {
-	color: rgba(255, 255, 255, .87);
-}
-
-.activity-list a > span {
-	margin-right: 5px;
-}
-
-.activity-list {
-	font-size: 22px;
-	text-align: left;
-}
-
-.activity-list a:hover {
-	color: rgba(255, 255, 255, .87);
-}
-
-.activity-list a {
-	margin-bottom: 10px;
-	display: block;
-}
-
-.activity-list a > span {
-	margin-right: 5px;
-}
-
-.info-list {
-	text-align: center;
-}
-
-.info-list > a {
-	display: inline-block;
-	border-bottom: 1px dotted rgba(255, 255, 255, .6);
-}
-
-.info-list > a:hover {
-	border-bottom: 1px dotted rgba(255, 255, 255, .87);
+.cover-scroll {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
