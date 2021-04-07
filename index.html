@@ -1,276 +1,36 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128882787-3"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-
-      gtag('js', new Date());
-      gtag('config', 'UA-128882787-3');
-    </script>
-
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
-    <meta content="#264653" name="theme-color">
-
     <title>Ji Sungbin</title>
 
-    <link href="https://sungb.in/" rel="canonical">
-    <link href="star.ico" rel=" shortcut icon">
-    <link href="star.ico" rel="icon">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="yes" name="apple-mobile-web-app-capable">
 
-    <meta content="https://sungb.in/" property="al:web:url">
-    <meta content="website" property="og:type">
-    <meta content="Ji Sungbin" property="og:title">
-    <meta content="sungbin's page" property="og:description">
-    <meta content="https://raw.githubusercontent.com/jisungbin/sungb.in/main/image/sungbin.png" property="og:image">
-    <meta content="https://sungb.in/" property="og:url">
+    <meta content="Ji Sungbin" property="og:title"/>
+    <meta content="website" property="og:type"/>
+    <meta content="Ji Sungbin's portfolio" property="og:description"/>
+    <meta content="https://sungb.in" property="og:url"/>
+    <meta content=""
+          property="og:image"/>
 
-    <link href="./css/icon.css" rel="stylesheet">
-    <link href="./css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="stylesheet" href="assets/css/index.css"/>
+    <link rel="stylesheet" href="assets/css/animation.css"/>
+
+    <script src="assets/js/wow.js"></script>
+    <script>new WOW().init();</script>
 </head>
 
-<body oncontextmenu="return false;">
-<div id="list"
-     style="position: fixed; top: 0; bottom: 0; left: 15px; z-index: 999999; display: flex; align-items: center; flex-direction: column; justify-content: center;">
-    <div class="circle circle-active" onclick="pageMove(1);"></div>
-    <div class="circle" onclick="pageMove(2);"></div>
-    <div class="circle" onclick="pageMove(3);"></div>
-    <div class="circle" onclick="pageMove(4);"></div>
-    <div class="circle" onclick="pageMove(5);"></div>
-</div>
-<div id="body">
-    <section style="background: #264653 center / cover;">
-        <div
-                style="display: flex; justify-items: center; height: 100vh; align-items: center;">
-            <div style="margin: 0 auto; text-align: center;">
-                <p
-                        style="font-size: 50px; font-weight: 100; margin-bottom: 72px;">
-                    👋 Ji Sungbin</p>
-                <p style="font-size: 27px;">A coder who always studies<br/>to become an iOS or Android programmer.</p>
-            </div>
-        </div>
-    </section>
-    <section style="background: #2a9d8f center / cover; margin-top: 100vh;">
-        <div
-                style="height: 100vh; display: flex; align-items: center; align-self: center; justify-content: center; flex-direction: column;">
-            <article style="margin: 0 auto;">
-                <p style="font-size: 36px; text-align: center; font-weight: 700;">😀 Profile</p>
-                <p
-                        style="font-size: 22px; text-align: center; font-weight: 200; margin-top: 5px; color: rgba(255, 255, 255, .6);">
-                    About me</p>
-            </article>
-            <article class="profile-link"
-                     style="margin: 72px auto 0; font-size: 22px; color: rgba(255, 255, 255, .6);">
-                <a href="https://github.com/jisungbin/" rel="noopener" target="_blank"><span
-                        class="mdi mdi-github"></span> jisungbin</a>
-                <a rel="noopener" target="_blank"><span
-                        class="mdi mdi-cake-variant"></span> 02.12.02 (🇰🇷)</a>
-                <a href="https://play.google.com/store/apps/dev?id=5527691348431041833" rel="noopener"
-                   target="_blank"><span class="mdi mdi-google-play"></span> Ji Sungbin</a>
-                <a href="https://www.youtube.com/channel/UChubzljAKmAZQ65VFyR7cYA" rel="noopener" target="_blank"><span
-                        class="mdi mdi-youtube"></span> SungDroid</a>
-                <a href="https://sungbin.me" rel="noopener" target="_blank"><span class="mdi mdi-home"></span>
-                    sungbin.me</a>
-                <a href="mailto:ji@sungb.in" rel="noopener"><span class="mdi mdi-email"></span>
-                    ji@sungb.in</a>
-            </article>
-        </div>
-    </section>
-    <section
-            style="background: #e9c46a center / cover; height: 100vh; display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 100vh;">
-        <article style="margin: 0 auto;"> <!-- TODO: 글씨 색갈을 뭐로 하면 좋을까? -->
-
-            <p style="font-size: 36px; text-align: center; font-weight: 700;">📚 Project</p>
-            <p
-                    style="font-size: 22px; text-align: center; font-weight: 200; margin-top: 5px; color: rgba(255, 255, 255, .6);">
-                Android libraries and applications</p>
-        </article>
-        <article class="activity-list" style="margin: 52px auto 0; color: #ffffff99;">
-            <a href="https://github.com/jisungbin/AndroidUtils" rel="noopener" target="_blank"
-               title="🔥 Powerful Utils for Android 🔥"><span
-                    class="mdi mdi-android"></span> AndroidUtils</a>
-            <a href="https://github.com/jisungbin/SpakChat" rel="noopener" target="_blank"
-               title="Android firebase chatting application."><span
-                    class="mdi mdi-chat-processing"></span> SpakChat</a>
-            <a href="https://github.com/jisungbin/KakaoTalkBotBaseModule" rel="noopener" target="_blank"
-               title="Android KakaoTalk bot application development basic library."><span
-                    class="mdi mdi-robot"></span> KakaoTalkBotBaseModule</a>
-            <a href="https://github.com/jisungbin/GitMessengerBot" rel="noopener" target="_blank"
-               title="a Messenger Auto-Reply bot application with Git service."><span
-                    class="mdi mdi-github"></span> GitMessengerBot</a>
-            <a href="https://github.com/jisungbin/MusicInformator" rel="noopener" target="_blank"
-               title="a music information finder application with jetpack libraries, full-material design, gradle kotlin dsl, and databinding."><span
-                    class="mdi mdi-music-circle"></span> MusicInformator</a>
-            <a href="https://github.com/jisungbin/Android-Interview-Study-2021" rel="noopener" target="_blank"
-               title="(korean) 🤓 2021~ 안드로이드 취직 대비 면접 공부 기록터 📖"><span
-                    class="mdi mdi-school"></span> Android-Interview-Study-2021</a>
-            <a href="https://github.com/jisungbin/Portfolio-Application" rel="noopener" target="_blank"
-               title="(korean) 웹 만들기가 너무 어려워서 그냥 포기하고 앱으로 만든 포트폴리오"><span
-                    class="mdi mdi-human-child"></span> Portfolio-Application</a>
-        </article>
-    </section>
-    <section
-            style="background: #f4a261 center / cover; height: 100vh; display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 100vh;">
-        <article style="margin: 0 auto;">
-            <p style="font-size: 36px; text-align: center; font-weight: 700;">🔧 Dev Skills</p>
-            <p
-                    style="font-size: 22px; text-align: center; font-weight: 200; margin-top: 5px; color: rgba(255, 255, 255, .6);">
-                Usable android dev skills</p>
-        </article>
-        <article class="activity-list" style="margin: 52px auto 0; color: #ffffff99;">
-            <a><span class="mdi mdi-language-kotlin"></span> Kotlin</a>
-            <a><span class="mdi mdi-sword-cross"></span> Hilt and Dagger2</a>
-            <a><span class="mdi mdi-web"></span> Retrofit2 and OkHttp3</a>
-            <a><span class="mdi mdi-database"></span> Room</a>
-            <a><span class="mdi mdi-cloud-download"></span> Paging</a>
-            <a><span class="mdi mdi-clock-time-five"></span> RxKotlin and Coroutines</a>
-        </article>
-    </section>
-    <section
-            style="background: #e76f51 center / cover; height: 100vh; display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 100vh;">
-        <article style="margin: 0 auto;">
-            <p style="font-size: 36px; text-align: center; font-weight: 700;">⭐ sungb.in</p>
-            <p
-                    style="font-size: 22px; text-align: center; font-weight: 200; margin-top: 5px; color: rgba(255, 255, 255, .6);">
-                &copy; 2021 Ji Sungbin</p>
-        </article>
-        <article class="activity-list info-list"
-                 style="margin: 52px auto 0; color: rgba(255,255,255,0.6); font-size: 18px;">
-            <lottie-player autoplay background="transparent" loop
-                           speed="1" src="./asset/smooth-swinging.json"
-                           style="width: 300px; height: 300px;"></lottie-player>
-        </article>
-    </section>
-</div>
-d
-
-<script>
-  let lastUpdate = -1;
-  let page_num = 1;
-  const wheelEventListener = (e, skip = false) => {
-    if (Date.now() - lastUpdate < 100 && !skip) {
-      return;
+<style>
+    body {
+        font-family: 'Nanum Gothic', sans-serif;
+        -webkit-font-smoothing: antialiased;
     }
-    if (e.ctrlKey || e.shiftKey) return;
-    if (!skip) lastUpdate = Date.now();
+</style>
 
-    let cnt = document.querySelectorAll('#body > section').length,
-        origin = page_num,
-        next = page_num;
-    if (e.deltaY > 0) {
-      if (page_num < cnt) {
-        next = ++page_num;
+<body class="cover-container">
 
-        document.querySelector(`#body > section:nth-child(${origin})`).style.transition = '.5s';
-        document.querySelector(`#body > section:nth-child(${next})`).style.transition = 'none';
-
-        document.querySelector(`#body > section:nth-child(${origin})`).style.marginTop = '-100vh';
-        document.querySelector(`#body > section:nth-child(${next})`).style.marginTop = '0';
-
-        document.querySelector(`#list > div:nth-child(${next})`).classList.add('circle-active');
-        document.querySelector(`#list > div:nth-child(${origin})`).classList.remove('circle-active');
-      }
-    } else {
-      if (page_num > 1) {
-        next = --page_num;
-
-        document.querySelector(`#body > section:nth-child(${origin})`).style.transition = '.5s';
-        document.querySelector(`#body > section:nth-child(${next})`).style.transition = '.5s';
-
-        document.querySelector(`#body > section:nth-child(${next})`).style.marginTop = '0';
-
-        document.querySelector(`#list > div:nth-child(${next})`).classList.add('circle-active');
-        document.querySelector(`#list > div:nth-child(${origin})`).classList.remove('circle-active');
-      }
-    }
-
-    if (origin !== next) {
-      setTimeout(() => document.querySelector('meta[name=theme-color]').
-              setAttribute('content',
-                  document.querySelector(`#body > section:nth-child(${next})`).style.backgroundColor),
-          400);
-    }
-  };
-
-  const pageMove = (num) => {
-    let dom = document.querySelector(`#list > div:nth-child(${num})`);
-    if (!dom.classList.contains('circle-active')) {
-      let delay = 0,
-          current = Math.max(num, page_num);
-      for (let i = Math.min(num, page_num); i < current; i++) {
-        setTimeout(() => wheelEventListener({
-          ctrlKey: false,
-          shiftKey: false,
-          deltaY: (num > page_num ? 1 : -1),
-        }, true), 50 * delay++);
-      }
-    }
-  };
-
-  window.addEventListener('wheel', wheelEventListener);
-
-  let start = 0;
-  window.addEventListener('touchstart', (e) => {
-    start = e.touches[0].pageY;
-  });
-  window.addEventListener('touchmove', (e) => {
-    let current = e.touches[0].pageY;
-    if (Math.abs(current - start) > 120) {
-      if (start > current) {
-        wheelEventListener({
-          ctrlKey: false,
-          shiftKey: false,
-          deltaY: 1,
-        }, true);
-      } else {
-        wheelEventListener({
-          ctrlKey: false,
-          shiftKey: false,
-          deltaY: -1,
-        }, true);
-      }
-
-      start = current;
-    }
-  });
-
-  document.addEventListener('keydown', (e) => {
-    if (e.type !== 'keydown') return;
-    switch (e.key) {
-      case 'ArrowUp':
-      case 'PageUp':
-        wheelEventListener({
-          ctrlKey: false,
-          shiftKey: false,
-          deltaY: -1,
-        }, true);
-        break;
-      case 'ArrowDown':
-      case 'PageDown':
-        wheelEventListener({
-          ctrlKey: false,
-          shiftKey: false,
-          deltaY: 1,
-        }, true);
-        break;
-    }
-  });
-
-  document.addEventListener('DOMContentLoaded', (e) => {
-    let i = 1000;
-    for (let element of document.querySelector('#body').children) {
-      element.style.zIndex = i--;
-    }
-  });
-
-</script>
 </body>
-
 </html>
